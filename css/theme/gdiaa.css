@@ -172,7 +172,7 @@
 }
 /* line 4, source/lib/font-awesome/_rotated-flipped.scss */
 .fa-rotate-90 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=90);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -182,7 +182,7 @@
 
 /* line 5, source/lib/font-awesome/_rotated-flipped.scss */
 .fa-rotate-180 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=180);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -192,7 +192,7 @@
 
 /* line 6, source/lib/font-awesome/_rotated-flipped.scss */
 .fa-rotate-270 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=270);
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
@@ -202,7 +202,6 @@
 
 /* line 8, source/lib/font-awesome/_rotated-flipped.scss */
 .fa-flip-horizontal {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
   -webkit-transform: scale(-1, 1);
   -moz-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
@@ -212,7 +211,6 @@
 
 /* line 9, source/lib/font-awesome/_rotated-flipped.scss */
 .fa-flip-vertical {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
   -webkit-transform: scale(1, -1);
   -moz-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
@@ -2563,7 +2561,6 @@ pre code {
   background: transparent;
   border: 6px solid #fff;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
-  min-height: 300px;
   max-height: 475px;
   padding: 5px 10px;
 }

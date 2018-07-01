@@ -136,6 +136,10 @@
             <h3>Example Text Editors</h3>
             <table class="copy--small" style="width: auto; margin: 2em auto;">
                 <tr>
+                    <td><strong>All</strong></td>
+                    <td style="padding-bottom: 20px;">Visual Studio Code, Sublime Text, Vim, Emacs</td>
+                </tr>
+                <tr>
                     <td style="width: 200px;"><strong>Linux</strong></td>
                     <td style="padding-bottom: 20px;">Gedit, Jedit, Kate</td>
                 </tr>
@@ -147,44 +151,35 @@
                     <td><strong>Windows</strong></td>
                     <td style="padding-bottom: 20px;">Notepad++</td>
                 </tr>
-                <tr>
-                    <td><strong>All</strong></td>
-                    <td style="padding-bottom: 20px;">Sublime Text, Vim, Emacs</td>
-                </tr>
             </table>
         </section>
       </section>
 
       <!-- Let's develop it: 10 minutes-->
-     <!-- <section>
+     <section>
           <h3>Let's Develop It!</h3>
           <p class="box--small copy--small">Let's setup our computer for Python programming</p>
           <ul class="list--xtall box--small copy--small">
               <li>
-                  <a href="http://www.sublimetext.com/3" target="_blank">Install Sublime Text 3</a> - A text editor
+                  <a href="http://www.python.org/download/" target="_blank">Install Python 3.</a>
               </li>
               <li>
-                  <a href="http://www.python.org/download/" target="_blank">Install Python 3</a>
+                  <a href="https://code.visualstudio.com/download" target="_blank">Install VS Code</a> - A text editor
               </li>
-              <li>
-                  <strong>Windows Users:</strong> After installing Python, open the "powershell" program and type:
-                  <br/><code class="copy--xsmall">[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python35", "User")</code>
-              </li>
-              <li>
-                  Locate and run the terminal program. Type <code>python3</code> and hit enter.
-              </li>
+              <li>Install the Python extension for VS Code. Click Extensions and search for Python</li>
+              <li>Install Pylint when Code starts to nag you.</li>
               <li>
                   More setup instructions are available:
                   <a href="http://learnpythonthehardway.org/book/ex0.html" target="_blank">here</a>
                   <br/><small>(Unlike these instructions, install Python 3, not Python 2. You can, but don't have to install the other text editors recommended in this guide)</small>
               </li>
           </ul>
-     </section> -->
+     </section>
 
       <!-- Block 2: 30 minutes -->
       <section>
           <h3>Let's Develop It!<br/><small><span class="blue">Working in the Python Shell</span></small></h3>
-          <p class="box--small">Open up your terminal and type <code>python3</code></p>
+          <p class="box--small">Open up your terminal (If in VSCode, use the menu: View &gt; Integrated Terminal)</p>
           <p class="fragment copy--small box--small">Follow along with the examples in the upcoming slides.<br/><strong>Just type them right in!</strong></p>
           <p class="fragment copy--small box--small">Feel free to explore, as well.<br/>You will not accidentally break things!</p>
           <p class="fragment box--small copy--xsmall">When you're done, type <code>exit()</code> to close the Python shell</p>
@@ -306,9 +301,10 @@ d = 10
 'string1' - 'string2'
           </code></pre></div>
           <p class="copy--small">There are also <strong>semantic</strong> errors.<br/><small>These are harder to catch because the computer can't catch them for us.</small></p>
+          <p>When Pylint is installed, Code will highlight some errors the same way that Chrome highlights misspellings. </p>
         </section>
       </section>
-
+    
       <!-- Let's develop it: 10 minutes -->
       <section>
           <h3>Let's Develop It</h3>
@@ -319,9 +315,9 @@ d = 10
 
 
       <!-- DEV ENV SETUP : 30 Minutes -->
-      <section>
+      <!-- <section>
         <section>
-            <h3>Using the Terminal (OSX) or PowerShell (Windows)</h3>
+            <h3>Using the Terminal</h3>
             <p class="copy--small box--small">Try each of the following commands in turn:</p>
             <table class="copy--xsmall" style='line-height: 1.5'>
                 <tr>
@@ -370,22 +366,23 @@ pwd
             <p class="copy--xsmall box--small">Now that the folders are made, we only have to use<br/><code>cd Projects/gdi-intro-python</code> in the future.</p>
 
             </div>
-        </section>
+        </section> -->
 
         <section>
             <h3>The Text Editor</h3>
-            <p class="copy--small box--small">Open sublime text.</p>
+            <p class="copy--small box--small">Open VS Code.</p>
             <ul class="list--tall copy--small box--small">
-                <li class="fragment">Click "File", then "Open". Navigate to the <code>gdi-intro-python</code> <strong>folder</strong> we just created and click "Open"</li>
+                <li class="fragment">Click "File", then "Open". Click "New Folder" and make a folder named <code>gdi-intro-python</code> then select it and click "Open"</li>
                 <li class="fragment">In the text editor, enter the following:
             <pre><code contenteditable class="python" style="min-height: 50px;">
 print('I am a Python program!')
             </code></pre>
                 </li>
                 <li class="fragment">Click "File", then "Save As...". Type "class1.py" and click "Save".</li>
-                <li class="fragment">Open a terminal and navigate to the <code>gdi-intro-python</code> folder.<br/><small>If you don't already have this folder open in a terminal.</small></li>
-                <li class="fragment">Type <code>python3 class1.py</code></li>
-                <li class="fragment">You should see the terminal print "I am a Python program!"</li>
+                <li class="fragment">Press Command+Shift+P and type <code>Python run in terminal</code></li>
+                <li class="fragment">You can also run it by clicking the debugger icon on the side of the window.</li>
+                <li class="fragment">Then clicking the play button.</li>
+                <li class="fragment">Either way, a terminal will open at the bottom of the window.</li>
             </ul>
         </section>
 
@@ -442,8 +439,7 @@ print(area)
         <section>
           <h3>Want help?</h3>
           <div class="box">
-            <p class="box"><a href="https://gdiaa.slack.com/messages/0516-intro-python/details/" target="_blank" class="roll"><span>#0516-intro-python</span></a></p>
-            <p><small>Not on Slack? <a target="_blank" href="http://bit.ly/gdiaa-slack" class="roll"><span data-title="bit.ly/gdiaa-slack">bit.ly/gdiaa-slack</span></a></small></p>
+            <p class="box"><a href="https://gdiabq.slack.com" target="_blank" class="roll"><span>Girl Develop It Albuquerque Slack</span></a></p>
           </div>
         </section>
 
@@ -451,7 +447,7 @@ print(area)
           <img src="images/gdi_logo_badge.png" class="img--bare" height="450px" />
           <div class="box--small">
             <h3><span class="green">Intro to Python</span><br/><small><a href="class2.html">Class 2 &raquo;</a></small></h3>
-            <p><small>@gdiannarbor  &nbsp; | &nbsp; #GDIA2 &nbsp; | &nbsp; #IntroToPython</small></p>
+            <p><small>@gdiabq  &nbsp; | #IntroToPython</small></p>
           </div>
         </section>
 
@@ -460,7 +456,7 @@ print(area)
 
     <footer>
       <div class="copyright">
-        @gdiannarbor  &nbsp; | &nbsp; #GDIA2 &nbsp; | &nbsp; #IntroToPython &nbsp;
+        Based on slides from @gdiannarbor  &nbsp; | &nbsp; #GDIA2 &nbsp; | &nbsp; #IntroToPython &nbsp;
         <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
       </div>
     </footer>
