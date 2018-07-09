@@ -371,14 +371,21 @@ pwd
         <section>
             <h3>The Text Editor</h3>
             <p class="copy--small box--small">Open VS Code.</p>
+            <p class="copy--small box--small">One time only: Hit Cmd+Shift+P, type <code>Python Select</code>, and choose Python 3.7. Then quit and re-start Code.</p>
+        </section>
+        <section>
+            <h3>The Text Editor</h3>
+            <p class="copy--small box--small">Open VS Code.</p>
             <ul class="list--tall copy--small box--small">
                 <li class="fragment">Click "File", then "Open". Click "New Folder" and make a folder named <code>gdi-intro-python</code> then select it and click "Open"</li>
+                <li class="fragment">Make a new file (Cmd+N)</li>
                 <li class="fragment">In the text editor, enter the following:
             <pre><code contenteditable class="python" style="min-height: 50px;">
 print('I am a Python program!')
             </code></pre>
                 </li>
                 <li class="fragment">Click "File", then "Save As...". Type "class1.py" and click "Save".</li>
+                <li class="fragment">Now is about the time you should be seeing Code nagging you about Pylint. Hit install.</li>
                 <li class="fragment">Press Command+Shift+P and type <code>Python run in terminal</code></li>
                 <li class="fragment">You can also run it by clicking the debugger icon on the side of the window.</li>
                 <li class="fragment">Then clicking the play button.</li>
@@ -389,17 +396,22 @@ print('I am a Python program!')
         <section>
             <h3>User Input</h3>
             <p class="copy--small box--small">To obtain user input, use <code>input()</code></p>
+        </section>
+
+        <section>
+            <h3>User Input</h3>
+            <p class="copy--small box--small">To obtain user input, use <code>input()</code></p>
             <p class="copy--small box--small">Change the class1.py text to the following and run it again</p>
             <pre><code contenteditable class="python" style="min-height: 50px;">
-input_value = input("Enter a radius:")
-radius = float(input_value)
-area = 3.14159 * radius * radius
-print("The area of a circle with radius " + input_value + " is:")
-print(area)
+    input_value = input("Enter a radius:")
+    radius = float(input_value)
+    area = 3.14159 * radius * radius
+    print("The area of a circle with radius " + input_value + " is:")
+    print(area)
             </code></pre>
             <p class="copy--small box--small">The user's input is a string, so we use <code>float()</code> to make it a number</p>
         </section>
-      </section>
+    </section>
 
       <!-- Let's develop it: 15 minutes -->
       <section>
